@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+	background: #626262;
+	color: #FFFFFF;
+;
+}
+.wrapper{
+	margin: auto;
+	width: 80%;
+}
+
+ .logo, .menu {
+    display: inline-block; 
+}
+.logo{
+	margin-right: 63%;
+	position: relative;
+	padding: 40px 0;
+	padding-left: 44px;
+	font: bold 24px/31px helvetica, arial, pt_serifbold, sans-serif;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.menu{
+	display: flex; 
+	align-items: center;
+
+}
+
+.menu__item{
+	position:relative;
+	margin-right: 26px;
+	font: 500 18px/21px helvetica, arial, Roboto, sans-serif;
+	color: #FFFFFF;;
+	text-decoration: none;
+	transition: opacity .5s;
+}
+.menu__item:last-child { 
+	margin-right: 0px;
+}
+.logo__circle{
+	width: 28px;
+	height: 28px;
+	left: 0; 
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	border-radius: 50%;
+}
+.logo__circle_color_blue { 
+	left: 8px;
+	top: 56%;
+	background: #FFEBCD;
+	opacity: .7;
+}
+.logo__circle_color_dark-blue { 
+	background: #FF4500;
+}
+.menu__item_active:after{
+	position: absolute;
+	display: block;
+	content: '';
+	left:0;
+	width: 100%;
+	height: 3px;
+	background: #FF4500;
+	opacity: 0;
+	transition: opacity .5s;
+}
+.menu__item:hover{
+	border: 3px outset #FF4500;
+	opacity: 0.7; 
+	color: #000; 
+}
+.menu__item_active:hover:after, .menu__item_active:after{
+	opacity: 1;
+}
+.main-section__title{
+	margin: 0 0 40px 0;
+	font: bold 50px/65px helvetica, arial, pt_serifbold, sans-serif;
+	color: #FFFFFF;;
+}
+.main-section{
+	padding: 0 0 100px 0;
+	background: top right no-repeat url();
+}
+.main-section__subtitle{
+	margin: 0 0 41px 0;
+	font: 500 28px/32px helvetica, arial, Roboto, sans-serif;
+	color: #FFFFFF;
+}
+.main-section__button{
+	display: inline block;
+	font: 500 14px/16px helvetica, arial, Roboto, sans-serif;
+	background: #FF4500;
+	color: #FFFFFF;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: .5s;
+}
+
+}
+.main-section__button:hover{
+	opacity: .5;
+}
+.main-section__about{
+	margin: 0 0 20px 0;
+	font: 500 28px/25px helvetica, arial, Roboto, sans-serif;
+	color: #FFFFFF;;
+}
+.menu__item_active:after{
+	position: absolute;
+	display: block;
+	content: '';
+	left:0;
+	width: 100%;
+	height: 3px;
+	background: #FF4500;
+	opacity: 0;
+	transition: opacity .5s;
+}
+.menu__item:hover{
+	border: 3px outset #FFEBCD;
+	opacity: 0.7; 
+	color: #000; 
+}
+
+.menu__item_active:hover:after, .menu__item_active:after{
+	opacity: 1;
+}

@@ -1,1 +1,1 @@
-# easy_digital
+# newproject
